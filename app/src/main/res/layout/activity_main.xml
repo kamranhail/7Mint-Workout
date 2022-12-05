@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/orangebackground">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:padding="50dp"
+        android:paddingStart="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/workoutlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <FrameLayout
+        android:id="@+id/flstart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+        app:layout_constraintVertical_bias="0.365"
+        android:background="@drawable/itel_round_ripple"
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:id="@+id/tv_start"
+        android:text="Start"
+        android:textColor="@color/orangebackground"
+        android:layout_gravity="center"
+        />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flBMI"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundbuttonringorange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flstart">
+
+        <TextView
+            android:id="@+id/tv_BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BMI"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Check your previousHistory"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/flHIS"
+        app:layout_constraintStart_toStartOf="@+id/flHIS"
+        app:layout_constraintTop_toBottomOf="@+id/flHIS" />
+
+    <FrameLayout
+        android:id="@+id/flHIS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundbuttonringorange"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flstart">
+
+        <TextView
+            android:id="@+id/tv_HIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="HISTORY"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_hh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculate your BMI"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="normal"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/flBMI"
+        app:layout_constraintStart_toStartOf="@+id/flBMI"
+        app:layout_constraintTop_toBottomOf="@+id/flBMI" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
